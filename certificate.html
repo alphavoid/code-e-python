@@ -7,10 +7,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
         <title>
             Certificate
         </title>
+        <script>
+            
+        </script>
         <style>
+            
             .contact
 {
 position: relative;
@@ -200,93 +205,9 @@ min-height: 70vh;
     </head>
     <body>
         <script>
-            var students=[
-        {
-        "id":0,
-        "name":"akshika",
-        "course":["django","python"],
-        "score":["50%","90%"],
-        "email":"abc@gmail.com",
-        "image":"./images/certificate.jpg"
-    },
-    {
-        "id":1,
-        "name":"anisha",
-        "course":["django","python"],
-        "score":["50%","90%"],
-        "email":"a@gmail.com",
-        "image":"./images/certificate.jpg"
-    },
-    {
-        "id":2,
-        "name":"john",
-        "course":["django","python"],
-        "score":["50%","90%"],
-        "email":"ab@gmail.com",
-        "image":"./images/certificate.jpg"
-    },
-    {
-        "id":3,
-        "name":"anuj",
-        "course":["django","python"],
-        "score":["50%","90%"],
-        "email":"c@gmail.com",
-        "image":"./images/certificate.jpg"
-    },
-    {
-        "id":4,
-        "name":"anamaika",
-        "course":["django","python"],
-        "score":["50%","90%"],
-        "email":"hjk@gmail.com",
-        "image":"./images/certificate.jpg"
-    },
-    {
-        "id":5,
-        "name":"arsuhi",
-        "course":["django","python"],
-        "score":["50%","90%"],
-        "email":"fgh@gmail.com",
-        "image":"./images/certificate.jpg"
-    },
-    {
-        "id":6,
-        "name":"avani",
-        "course":["django","python"],
-        "score":["50%","90%"],
-        "email":"ac@gmail.com",
-        "image":"./images/certificate.jpg"
-    },
-    {
-        "id":7,
-        "name":"mukul",
-        "course":["django","python"],
-        "score":["50%","90%"],
-        "email":"asd@gmail.com",
-         "image":"./images/certificate.jpg"
-    }
-    ];
-    
-    var pic;
-            window.onload=function(){
-                var url_string=(window.location.href).toLowerCase();
-                var url = new URL (url_string);
-                var id=url.searchParams.get("id");
-                console.log(id);
-                var arr = students.filter(function(value) {
-                    return value.id == id;
-                  })
-                  document.getElementById("name").innerHTML=arr[0].name;
-                document.getElementById("demo").innerHTML=arr[0].course[0];
-                document.getElementById("demo_score").innerHTML=arr[0].score[0];
-                document.getElementById("demo1").innerHTML=arr[0].course[1];
-                document.getElementById("demo_score1").innerHTML=arr[0].score[1];
-                console.log(arr[0].course);
-                pic=arr[0].image;
-                
-            }
+            
             function myfun(){
-                document.getElementById('bigpic').src =pic;
+                document.getElementById('bigpic').src="./images/certificate.jpg";
             }
         </script>
     <section class="contact" id="contact">
@@ -295,7 +216,7 @@ min-height: 70vh;
             <div class="col-sm-12">
             <div class="headerText text-center">
               <h1 class="moveTextUp2 display-3 text-sm-center font-weight-bold ">Achievements</h1>
-              <h2 id="name"></h2>
+              <h2 id="name">Anisha</h2>
               <!-- <span class="heading" style="color:#333333;" ><center><b>Contact&nbsp;Us</b></center></span> -->
                       <hr style="margin:auto;width:50%;background-color:black;" >
                     
@@ -317,12 +238,12 @@ min-height: 70vh;
                         <span class="progress-right">
                             <span class="progress-bar"></span>
                         </span>
-                        <div class="progress-value" id="demo_score"></div>
+                        <div class="progress-value" id="demo_score">90%</div>
                     </div>
                     
                     <div class="card-body">
-                      <h4 class="card-title" id="demo"></h4>
-                      <p class="card-text " id="demo_score">Scored:</p>
+                      <h4 class="card-title" id="demo">Python</h4>
+                      <p class="card-text " id="demo_score">Scored:90%</p>
                       <Button type="button" class="btn btn-danger" onClick="myfun()">View Certificate</a>                    </div>
                   </div>
                   <div class="card" style="width:200px">
@@ -334,11 +255,11 @@ min-height: 70vh;
                         <span class="progress-right">
                             <span class="progress-bar"></span>
                         </span>
-                        <div class="progress-value" id="demo_score1"></div>
+                        <div class="progress-value" id="demo_score1">80%</div>
                     </div>
                     <div class="card-body">
-                      <h4 class="card-title" id="demo1"></h4>
-                      <p class="card-text " id="demo_score1">Scored:</p>
+                      <h4 class="card-title" id="demo1">Django</h4>
+                      <p class="card-text " id="demo_score1">Scored:80%</p>
                       <Button type="button" class="btn btn-danger" onClick="myfun()">View Certificate</a>                    </div>
                   </div>
                   <div class="card" style="width:200px">
@@ -354,7 +275,7 @@ min-height: 70vh;
                     </div>
                     <div class="card-body">
                       <h4 class="card-title">Machine Learning</h4>
-                      <p class="card-text ">Scored:</p>
+                      <p class="card-text ">Scored:60%</p>
                       <Button type="button" class="btn btn-danger" onClick="myfun()">View Certificate</a>
 
                     </div>

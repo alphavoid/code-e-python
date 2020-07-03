@@ -184,4 +184,91 @@
                           <a href="#" class="btn btn-danger">View Certificate</a>
                         </div>
                       </div>
-                      </div>
+                      </div> var pic;
+                      window.onload=function(){
+                          var url_string=(window.location.href).toLowerCase();
+                          var url = new URL (url_string);
+                          var id=url.searchParams.get("id");
+                          console.log(id);
+                          var arr = students.filter(function(value) {
+                              return value.id == id;
+                            })
+                            document.getElementById("name").innerHTML=arr[0].name;
+                          document.getElementById("demo").innerHTML=arr[0].course[0];
+                          document.getElementById("demo_score").innerHTML=arr[0].score[0];
+                          document.getElementById("demo1").innerHTML=arr[0].course[1];
+                          document.getElementById("demo_score1").innerHTML=arr[0].score[1];
+                          console.log(arr[0].course);
+                          pic=arr[0].image;
+                          
+                      }
+
+
+                      var students=[
+        {
+        "id":0,
+        "name":"akshika",
+        "course":["django","python"],
+        "score":["50%","90%"],
+        "email":"abc@gmail.com",
+        "image":"./images/certificate.jpg"
+    },
+    {
+        "id":1,
+        "name":"anisha",
+        "course":["django","python"],
+        "score":["50%","90%"],
+        "email":"a@gmail.com",
+        "image":"./images/certificate.jpg"
+    },
+    {
+        "id":2,
+        "name":"john",
+        "course":["django","python"],
+        "score":["50%","90%"],
+        "email":"ab@gmail.com",
+        "image":"./images/certificate.jpg"
+    },
+    {
+        "id":3,
+        "name":"anuj",
+        "course":["django","python"],
+        "score":["50%","90%"],
+        "email":"c@gmail.com",
+        "image":"./images/certificate.jpg"
+    },
+    {
+        "id":4,
+        "name":"anamaika",
+        "course":["django","python"],
+        "score":["50%","90%"],
+        "email":"hjk@gmail.com",
+        "image":"./images/certificate.jpg"
+    },
+    {
+        "id":5,
+        "name":"arsuhi",
+        "course":["django","python"],
+        "score":["50%","90%"],
+        "email":"fgh@gmail.com",
+        "image":"./images/certificate.jpg"
+    },
+    {
+        "id":6,
+        "name":"avani",
+        "course":["django","python"],
+        "score":["50%","90%"],
+        "email":"ac@gmail.com",
+        "image":"./images/certificate.jpg"
+    },
+    {
+        "id":7,
+        "name":"mukul",
+        "course":["django","python"],
+        "score":["50%","90%"],
+        "email":"asd@gmail.com",
+         "image":"./images/certificate.jpg"
+    }
+    ];
+
+        
